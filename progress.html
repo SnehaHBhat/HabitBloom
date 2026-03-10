@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- DOCTYPE tells the browser this is an HTML5 document -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HabitBloom Progress - View your streaks, weekly stats and achievements." />
+  <meta name="author" content="Your Name Here" />
+  <title>HabitBloom 🌱 | My Progress</title>
+  <!-- Stylesheet link — you will create this in Weeks 2-3 -->
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+
+<body>
+
+  <!-- ===== HEADER: Same across all pages ===== -->
+  <header>
+    <h1>🌱 HabitBloom</h1>
+    <p><em>Small Steps. Big Growth.</em></p>
+
+    <!-- NAV: Main navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="tracker.html">✅ My Habits</a></li>
+        <li><a href="progress.html">📊 My Progress</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN: Page content ===== -->
+  <main>
+
+    <!-- SECTION: Page heading -->
+    <section id="progress-header">
+      <h2>📊 My Progress</h2>
+      <p>Here is a summary of your habit journey so far. Keep it up! 🌸</p>
+      <!-- TIME: Current week range displayed semantically -->
+      <p>
+        Week of <time datetime="2026-03-10">March 10</time> —
+        <time datetime="2026-03-16">March 16, 2026</time>
+      </p>
+    </section>
+
+    <!-- SECTION: Streak summary -->
+    <section id="streak-summary">
+      <h3>🔥 Your Streaks</h3>
+
+      <!-- ARTICLE: Current streak card -->
+      <article>
+        <h4>Current Streak</h4>
+        <p><strong>7 days</strong> in a row! 🎉</p>
+        <label for="currentStreak">Streak progress:</label>
+        <meter
+          id="currentStreak"
+          value="7"
+          min="0"
+          max="30"
+          low="5"
+          high="20"
+          optimum="30"
+        >7 out of 30</meter>
+        <p><small>Goal: 30 day streak 🌱</small></p>
+      </article>
+
+      <!-- ARTICLE: Best streak card -->
+      <article>
+        <h4>Best Streak Ever</h4>
+        <p><strong>21 days</strong> — achieved on
+          <time datetime="2026-02-01">February 1, 2026</time> 🏆
+        </p>
+        <label for="bestStreak">Best streak progress:</label>
+        <meter
+          id="bestStreak"
+          value="21"
+          min="0"
+          max="30"
+          low="5"
+          high="20"
+          optimum="30"
+        >21 out of 30</meter>
+      </article>
+    </section>
+
+    <!-- SECTION: Weekly summary table -->
+    <section id="weekly-summary">
+      <h3>🗓️ This Week's Summary</h3>
+      <p>A checkmark means you completed that habit on that day.</p>
+
+      <!-- TABLE: Days vs habits completion grid -->
+      <table border="1">
+        <caption>Habit Completion — Week of March 10, 2026</caption>
+        <thead>
+          <tr>
+            <th>Habit</th>
+            <th><time datetime="2026-03-10">Mon</time></th>
+            <th><time datetime="2026-03-11">Tue</time></th>
+            <th><time datetime="2026-03-12">Wed</time></th>
+            <th><time datetime="2026-03-13">Thu</time></th>
+            <th><time datetime="2026-03-14">Fri</time></th>
+            <th><time datetime="2026-03-15">Sat</time></th>
+            <th><time datetime="2026-03-16">Sun</time></th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>💧 Drink Water</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>—</td>
+            <td>6/7</td>
+          </tr>
+          <tr>
+            <td>📚 Read 20 mins</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>—</td>
+            <td>5/7</td>
+          </tr>
+          <tr>
+            <td>🏃 Exercise</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>—</td>
+            <td>4/7</td>
+          </tr>
+          <tr>
+            <td>🧘 Meditate</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>—</td>
+            <td>5/7</td>
+          </tr>
+          <tr>
+            <td>😴 Sleep 10:30pm</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>—</td>
+            <td>5/7</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><strong>Daily Total</strong></td>
+            <td>4/5</td>
+            <td>4/5</td>
+            <td>4/5</td>
+            <td>4/5</td>
+            <td>4/5</td>
+            <td>5/5</td>
+            <td>—</td>
+            <td><strong>25/35</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- SECTION: Overall completion rates using progress bars -->
+    <section id="completion-rates">
+      <h3>📈 Overall Completion Rates</h3>
+
+      <article>
+        <h4>💧 Drink Water</h4>
+        <label for="waterProgress">Weekly completion:</label>
+        <progress id="waterProgress" value="6" max="7">86%</progress>
+        <p><small>6 out of 7 days — 86%</small></p>
+      </article>
+
+      <article>
+        <h4>📚 Read 20 Minutes</h4>
+        <label for="readProgress">Weekly completion:</label>
+        <progress id="readProgress" value="5" max="7">71%</progress>
+        <p><small>5 out of 7 days — 71%</small></p>
+      </article>
+
+      <article>
+        <h4>🏃 Exercise</h4>
+        <label for="exerciseProgress">Weekly completion:</label>
+        <progress id="exerciseProgress" value="4" max="7">57%</progress>
+        <p><small>4 out of 7 days — 57%</small></p>
+      </article>
+
+      <article>
+        <h4>🧘 Meditate</h4>
+        <label for="meditateProgress">Weekly completion:</label>
+        <progress id="meditateProgress" value="5" max="7">71%</progress>
+        <p><small>5 out of 7 days — 71%</small></p>
+      </article>
+
+      <article>
+        <h4>😴 Sleep 10:30pm</h4>
+        <label for="sleepProgress">Weekly completion:</label>
+        <progress id="sleepProgress" value="5" max="7">71%</progress>
+        <p><small>5 out of 7 days — 71%</small></p>
+      </article>
+    </section>
+
+    <!-- SECTION: Badges & achievements -->
+    <section id="badges">
+      <h3>🏅 Your Badges</h3>
+      <p>Badges are earned by hitting milestones in your habit journey.</p>
+
+      <!-- Definition list for badges earned -->
+      <dl>
+        <dt>🌱 First Step</dt>
+        <dd>Completed your very first habit. Earned on
+          <time datetime="2026-01-01">January 1, 2026</time>
+        </dd>
+
+        <dt>🔥 Week Warrior</dt>
+        <dd>Completed all habits for 7 days in a row. Earned on
+          <time datetime="2026-01-07">January 7, 2026</time>
+        </dd>
+
+        <dt>⭐ Habit Builder</dt>
+        <dd>Tracked 5 different habits at the same time. Earned on
+          <time datetime="2026-01-15">January 15, 2026</time>
+        </dd>
+
+        <dt>🏆 21 Day Champion</dt>
+        <dd>Maintained a 21 day streak. Earned on
+          <time datetime="2026-02-01">February 1, 2026</time>
+        </dd>
+
+        <dt>🔒 30 Day Legend (Locked)</dt>
+        <dd>Reach a 30 day streak to unlock this badge. <em>Keep going!</em></dd>
+      </dl>
+    </section>
+
+    <!-- ASIDE: Quick stats summary -->
+    <aside>
+      <h3>📋 Quick Stats</h3>
+      <ul>
+        <li>📅 <strong>Days tracked:</strong> 45</li>
+        <li>✅ <strong>Total habits completed:</strong> 187</li>
+        <li>🔥 <strong>Current streak:</strong> 7 days</li>
+        <li>🏆 <strong>Best streak:</strong> 21 days</li>
+        <li>🏅 <strong>Badges earned:</strong> 4 out of 5</li>
+      </ul>
+
+      <!-- DETAILS: Tips for improving progress -->
+      <h3>💡 Tips to Improve</h3>
+      <details>
+        <summary>How do I improve my completion rate?</summary>
+        <p>Try habit stacking — attach a new habit to one you already do automatically, like drinking water right after brushing your teeth.</p>
+      </details>
+      <details>
+        <summary>What if I miss a day?</summary>
+        <p>Don't stress! Just get back on track the next day. Missing once is human — missing twice becomes a pattern.</p>
+      </details>
+      <details>
+        <summary>How do I earn more badges?</summary>
+        <p>Keep your daily streak going and try hitting the 30 day streak to unlock the Legend badge!</p>
+      </details>
+    </aside>
+
+  </main>
+
+  <!-- ===== FOOTER: Same across all pages ===== -->
+  <footer>
+    <p>🌱 <strong>HabitBloom</strong> — Small Steps. Big Growth.</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="tracker.html">My Habits</a> |
+      <a href="progress.html">My Progress</a> |
+      <a href="about.html">About</a>
+    </nav>
+    <address>
+      Contact: <a href="mailto:hello@habitbloom.com">hello@habitbloom.com</a>
+    </address>
+    <p>
+      <small>&copy; <time datetime="2026">2026</time> HabitBloom. Made with 🌸 and good habits.</small>
+    </p>
+  </footer>
+
+</body>
+</html>

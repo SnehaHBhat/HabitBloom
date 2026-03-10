@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- DOCTYPE tells the browser this is an HTML5 document -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HabitBloom - A simple daily habit tracker to help you grow one step at a time." />
+  <meta name="author" content="Your Name Here" />
+  <title>HabitBloom 🌱 | Home</title>
+  <!-- Stylesheet link — you will create this in Weeks 2-3 -->
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+
+<body>
+
+  <!-- ===== HEADER: Site name + Navigation ===== -->
+  <header>
+    <h1>🌱 HabitBloom</h1>
+    <p><em>Small Steps. Big Growth.</em></p>
+
+    <!-- NAV: Simple 4-link navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="tracker.html">✅ My Habits</a></li>
+        <li><a href="progress.html">📊 My Progress</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN: Page content ===== -->
+  <main>
+
+    <!-- SECTION: Welcome message -->
+    <section id="hero">
+      <h2>Welcome to HabitBloom! 🌸</h2>
+      <p>
+        Build better habits, one day at a time.
+        Track your daily goals, keep your streak alive, and
+        <mark>watch yourself grow!</mark>
+      </p>
+      <a href="tracker.html"><button>✅ Start Tracking</button></a>
+      <a href="progress.html"><button>📊 View Progress</button></a>
+    </section>
+
+    <!-- SECTION: How it works — simple 3 steps -->
+    <section id="how-it-works">
+      <h2>🌈 How It Works</h2>
+      <ol>
+        <li><strong>Set up your profile</strong> — Enter your name and pick your goals.</li>
+        <li><strong>Track daily</strong> — Check off your habits every day.</li>
+        <li><strong>Watch yourself bloom 🌸</strong> — See your streaks and progress grow!</li>
+      </ol>
+    </section>
+
+    <!-- SECTION: Quick setup form -->
+    <section id="setup">
+      <h2>🌿 Get Started</h2>
+
+      <form action="tracker.html" method="get">
+
+        <!-- Name input -->
+        <label for="userName">Your Name:</label>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          placeholder="e.g. Bloom Buddy"
+          maxlength="30"
+          required
+        />
+        <br /><br />
+
+        <!-- Email input -->
+        <label for="userEmail">Email (optional):</label>
+        <input
+          type="email"
+          id="userEmail"
+          name="userEmail"
+          placeholder="you@example.com"
+        />
+        <br /><br />
+
+        <!-- Goal selection -->
+        <label for="topGoal">Your Main Goal:</label>
+        <input
+          type="text"
+          id="topGoal"
+          name="topGoal"
+          list="goalOptions"
+          placeholder="Type or choose a goal..."
+        />
+        <datalist id="goalOptions">
+          <option value="Drink more water"></option>
+          <option value="Exercise daily"></option>
+          <option value="Read more books"></option>
+          <option value="Sleep better"></option>
+          <option value="Practice mindfulness"></option>
+          <option value="Learn a new skill"></option>
+        </datalist>
+        <br /><br />
+
+        <!-- Reminder preference -->
+        <label for="reminderTime">Daily Reminder:</label>
+        <select id="reminderTime" name="reminderTime">
+          <option value="morning">🌅 Morning</option>
+          <option value="afternoon">☀️ Afternoon</option>
+          <option value="evening">🌙 Evening</option>
+          <option value="none">🔕 No reminders</option>
+        </select>
+        <br /><br />
+
+        <button type="submit">🚀 Start My Journey!</button>
+        <button type="reset">🔄 Clear</button>
+      </form>
+    </section>
+
+    <!-- SECTION: Popular habits -->
+    <section id="popular-habits">
+      <h2>🌟 Popular Habits</h2>
+
+      <!-- ARTICLE: Each habit is a simple self-contained card -->
+      <article>
+        <h3>💧 Drink 8 Glasses of Water</h3>
+        <p>Stay hydrated for better energy and focus.</p>
+        <label>Community completion today:</label>
+        <progress value="84" max="100">84%</progress>
+      </article>
+
+      <article>
+        <h3>📚 Read for 20 Minutes</h3>
+        <p>Daily reading builds knowledge and reduces stress.</p>
+        <label>Community completion today:</label>
+        <progress value="62" max="100">62%</progress>
+      </article>
+
+      <article>
+        <h3>🏃 Exercise for 30 Minutes</h3>
+        <p>Move your body and boost your mood every day.</p>
+        <label>Community completion today:</label>
+        <progress value="51" max="100">51%</progress>
+      </article>
+    </section>
+
+    <!-- ASIDE: Quick tips -->
+    <aside>
+      <h3>💡 Quick Tips</h3>
+      <ul>
+        <li>Start small — just <strong>1 or 2 habits</strong> to begin.</li>
+        <li>Track at the <strong>same time</strong> every day.</li>
+        <li>Missing one day is okay — just don't miss two!</li>
+      </ul>
+
+      <!-- DETAILS: Expandable FAQ -->
+      <h3>❓ FAQ</h3>
+      <details>
+        <summary>Is HabitBloom free?</summary>
+        <p>Yes! 100% free, no sign up required.</p>
+      </details>
+      <details>
+        <summary>How many habits can I track?</summary>
+        <p>Up to 10 habits at a time.</p>
+      </details>
+      <details>
+        <summary>Does it work on my phone?</summary>
+        <p>Yes! HabitBloom works on all screen sizes.</p>
+      </details>
+    </aside>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>🌱 <strong>HabitBloom</strong> — Small Steps. Big Growth.</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="tracker.html">My Habits</a> |
+      <a href="progress.html">My Progress</a> |
+      <a href="about.html">About</a>
+    </nav>
+    <address>
+      Contact: <a href="mailto:hello@habitbloom.com">hello@habitbloom.com</a>
+    </address>
+    <p>
+      <small>&copy; <time datetime="2025">2025</time> HabitBloom. Made with 🌸 and good habits.</small>
+    </p>
+  </footer>
+
+</body>
+</html>

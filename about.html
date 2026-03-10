@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- DOCTYPE tells the browser this is an HTML5 document -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HabitBloom - Learn about the app, how it works, and get in touch with us." />
+  <meta name="author" content="Your Name Here" />
+  <title>HabitBloom 🌱 | About</title>
+  <!-- Stylesheet link — you will create this in Weeks 2-3 -->
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+
+<body>
+
+  <!-- ===== HEADER: Same across all pages ===== -->
+  <header>
+    <h1>🌱 HabitBloom</h1>
+    <p><em>Small Steps. Big Growth.</em></p>
+
+    <!-- NAV: Main navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="tracker.html">✅ My Habits</a></li>
+        <li><a href="progress.html">📊 My Progress</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN: Page content ===== -->
+  <main>
+
+    <!-- SECTION: Page heading -->
+    <section id="about-header">
+      <h2>ℹ️ About HabitBloom</h2>
+      <p>Learn about the project, how it works, and the person behind it.</p>
+    </section>
+
+    <!-- SECTION: About the project -->
+    <section id="about-project">
+      <h3>🌱 What is HabitBloom?</h3>
+      <p>
+        HabitBloom is a simple and colorful habit tracking web application
+        built to help everyday people build positive daily habits. The idea is
+        simple — <mark>track small actions every day</mark> and watch them grow
+        into lasting lifestyle changes over time.
+      </p>
+      <p>
+        HabitBloom was created as part of a Web Development course project,
+        built progressively using <strong>HTML5</strong>, <strong>CSS3</strong>
+        and <strong>JavaScript</strong>.
+      </p>
+
+      <!-- FIGURE: About image -->
+      <figure>
+        <img
+          src="images/about-banner.png"
+          alt="A person sitting at a desk happily tracking their daily habits"
+          width="500"
+          height="250"
+        />
+        <figcaption>Building better habits one day at a time 🌸</figcaption>
+      </figure>
+    </section>
+
+    <!-- SECTION: How it works — step by step -->
+    <section id="how-it-works">
+      <h3>🌈 How HabitBloom Works</h3>
+      <ol>
+        <li>
+          <strong>Go to the Home page</strong> — Enter your name, pick your
+          main goal and set a daily reminder time.
+        </li>
+        <li>
+          <strong>Visit My Habits daily</strong> — Check off each habit as you
+          complete it throughout the day.
+        </li>
+        <li>
+          <strong>Check My Progress</strong> — See your weekly completion
+          table, current streak and badges earned.
+        </li>
+        <li>
+          <strong>Keep going! 🌸</strong> — The longer your streak, the more
+          badges you unlock and the stronger your habits become.
+        </li>
+      </ol>
+    </section>
+
+    <!-- SECTION: Meet the creator -->
+    <section id="meet-creator">
+      <h3>👋 Meet the Creator</h3>
+
+      <!-- ARTICLE: Student bio -->
+      <article>
+        <figure>
+          <img
+            src="images/creator-photo.png"
+            alt="Photo of the student who built HabitBloom"
+            width="150"
+            height="150"
+          />
+          <figcaption>Your Name Here — Web Development Student</figcaption>
+        </figure>
+        <p>
+          Hi! I'm <strong>Your Name Here</strong>, a web development student
+          who built HabitBloom as part of my course project. This is my first
+          multi-page website, built using HTML5, with CSS3 and JavaScript to
+          be added in the coming weeks.
+        </p>
+        <p>
+          I chose a habit tracker because it's something practical and useful
+          that I would actually want to use myself. I hope you find it helpful
+          too!
+        </p>
+        <!-- TIME: Project start date -->
+        <p>
+          <small>Project started: <time datetime="2026-03-10">March 10, 2026</time></small>
+        </p>
+      </article>
+    </section>
+
+    <!-- SECTION: FAQ -->
+    <section id="faq">
+      <h3>❓ Frequently Asked Questions</h3>
+
+      <!-- DETAILS / SUMMARY: Expandable FAQ items -->
+      <details>
+        <summary>Is HabitBloom free to use?</summary>
+        <p>Yes! HabitBloom is completely free. No account or credit card needed.</p>
+      </details>
+
+      <details>
+        <summary>How many habits can I track?</summary>
+        <p>You can track up to 10 habits at a time.</p>
+      </details>
+
+      <details>
+        <summary>Will I lose my streak if I miss a day?</summary>
+        <p>Yes, but don't worry — your best streak is always saved on your progress page.</p>
+      </details>
+
+      <details>
+        <summary>Can I use HabitBloom on my phone?</summary>
+        <p>Absolutely! HabitBloom is designed to work on all screen sizes.</p>
+      </details>
+
+      <details>
+        <summary>What technologies was this built with?</summary>
+        <p>
+          HabitBloom is built with HTML5 (Week 1-2), CSS3 (Week 2-3) and
+          JavaScript (Week 4-5) as part of a web development course project.
+        </p>
+      </details>
+    </section>
+
+    <!-- SECTION: Contact form -->
+    <section id="contact">
+      <h3>📬 Get in Touch</h3>
+      <p>Have a question or suggestion? Send us a message!</p>
+
+      <form action="about.html" method="get">
+
+        <!-- Name -->
+        <label for="contactName">Your Name:</label>
+        <input
+          type="text"
+          id="contactName"
+          name="contactName"
+          placeholder="Your full name"
+          maxlength="50"
+          required
+        />
+        <br /><br />
+
+        <!-- Email -->
+        <label for="contactEmail">Your Email:</label>
+        <input
+          type="email"
+          id="contactEmail"
+          name="contactEmail"
+          placeholder="you@example.com"
+          required
+        />
+        <br /><br />
+
+        <!-- Subject -->
+        <label for="contactSubject">Subject:</label>
+        <input
+          type="text"
+          id="contactSubject"
+          name="contactSubject"
+          list="subjectOptions"
+          placeholder="What is this about?"
+        />
+        <datalist id="subjectOptions">
+          <option value="General Question"></option>
+          <option value="Bug Report"></option>
+          <option value="Feature Suggestion"></option>
+          <option value="Other"></option>
+        </datalist>
+        <br /><br />
+
+        <!-- Message -->
+        <label for="contactMessage">Message:</label>
+        <br />
+        <textarea
+          id="contactMessage"
+          name="contactMessage"
+          rows="5"
+          cols="40"
+          placeholder="Write your message here..."
+          maxlength="500"
+          required
+        ></textarea>
+        <br /><br />
+
+        <button type="submit">📬 Send Message</button>
+        <button type="reset">🔄 Clear</button>
+      </form>
+    </section>
+
+    <!-- ASIDE: Project info summary -->
+    <aside>
+      <h3>📋 Project Info</h3>
+      <dl>
+        <dt>🏫 Course</dt>
+        <dd>Web Development</dd>
+
+        <dt>📅 Started</dt>
+        <dd><time datetime="2026-03-10">March 10, 2026</time></dd>
+
+        <dt>💻 Technologies</dt>
+        <dd>HTML5, CSS3, JavaScript</dd>
+
+        <dt>🌐 Hosted On</dt>
+        <dd>GitHub Pages</dd>
+
+        <dt>📄 Pages</dt>
+        <dd>4 pages — Home, Tracker, Progress, About</dd>
+      </dl>
+    </aside>
+
+  </main>
+
+  <!-- ===== FOOTER: Same across all pages ===== -->
+  <footer>
+    <p>🌱 <strong>HabitBloom</strong> — Small Steps. Big Growth.</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="tracker.html">My Habits</a> |
+      <a href="progress.html">My Progress</a> |
+      <a href="about.html">About</a>
+    </nav>
+    <address>
+      Contact: <a href="mailto:hello@habitbloom.com">hello@habitbloom.com</a>
+    </address>
+    <p>
+      <small>&copy; <time datetime="2026">2026</time> HabitBloom. Made with 🌸 and good habits.</small>
+    </p>
+  </footer>
+
+</body>
+</html>
