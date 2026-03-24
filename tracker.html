@@ -32,14 +32,6 @@
   <!-- ===== MAIN: Page content ===== -->
   <main>
 
-    <!-- SECTION: Page heading + today's date -->
-    <section id="tracker-header">
-      <h2>✅ My Daily Habits</h2>
-      <!-- TIME: Displays today's date semantically -->
-      <p>Today is <time datetime="2026-03-10">Monday, March 10, 2026</time></p>
-      <p>Check off each habit as you complete it. Keep your streak alive! 🔥</p>
-    </section>
-
     <!-- SECTION: Daily progress bar -->
     <section id="daily-progress">
       <h3>Today's Progress</h3>
@@ -62,8 +54,6 @@
         <!-- Checkbox to mark habit as done -->
         <input type="checkbox" id="habit1" name="habit1" value="water" />
         <label for="habit1">Mark as completed</label>
-        <br />
-        <small>⏰ Reminder: All day</small>
       </article>
 
       <hr />
@@ -146,15 +136,6 @@
         </select>
         <br /><br />
 
-        <!-- Reminder time -->
-        <label for="habitReminder">Reminder Time:</label>
-        <input
-          type="time"
-          id="habitReminder"
-          name="habitReminder"
-        />
-        <br /><br />
-
         <!-- Habit note -->
         <label for="habitNote">Notes (optional):</label>
         <br />
@@ -173,24 +154,8 @@
       </form>
     </section>
 
-    <!-- ASIDE: Streak info and motivation -->
+    <!-- ASIDE: Motivation -->
     <aside>
-      <h3>🔥 Your Current Streak</h3>
-      <p>You are on a <strong>7 day streak!</strong> Keep it going!</p>
-
-      <!-- METER: Streak strength indicator -->
-      <label for="streakMeter">Streak strength:</label>
-      <meter
-        id="streakMeter"
-        value="7"
-        min="0"
-        max="30"
-        low="5"
-        high="20"
-        optimum="30"
-      >7 out of 30</meter>
-      <p><small>7 day streak — you're building momentum! 🌱</small></p>
-
       <h3>💬 Today's Motivation</h3>
       <blockquote>
         <p>"Success is the sum of small efforts repeated day in and day out."</p>
@@ -209,9 +174,7 @@
       <a href="progress.html">My Progress</a> |
       <a href="about.html">About</a>
     </nav>
-    <address>
-      Contact: <a href="mailto:hello@habitbloom.com">hello@habitbloom.com</a>
-    </address>
+
     <p>
       <small>&copy; <time datetime="2026">2026</time> HabitBloom. Made with 🌸 and good habits.</small>
     </p>
