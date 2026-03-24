@@ -1,5 +1,3 @@
-
-// Wait for the page to fully load before running any JavaScript
 document.addEventListener('DOMContentLoaded', function () {
 
   // --- STEP 1: Get the progress bar and its text from the page ---
@@ -190,6 +188,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /* =============================================
+   CSS ENHANCEMENT: ACTIVE NAVIGATION LINK
+
+   How it works:
+   - Reads the current page filename from
+     the browser's URL
+   - Finds the matching nav link and adds
+     the 'active' CSS class to highlight it
+   ============================================= */
+
+// Get the current page filename e.g. "tracker.html"
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+// Find all nav links in the header
+const navLinks = document.querySelectorAll('header nav ul li a');
+
+navLinks.forEach(function (link) {
+  // Get just the filename from each link's href
+  const linkPage = link.getAttribute('href');
+  // Add active class if it matches the current page
+  if (linkPage === currentPage) {
+    link.classList.add('active');
+  }
+});
+
+
+/* =============================================
    FEATURE 4: INDEX.HTML — FORM VALIDATION
 
    How it works:
@@ -201,7 +225,8 @@ document.addEventListener('DOMContentLoaded', function () {
      before moving to tracker.html
    ============================================= */
 
-const indexForm = document.getElementById('setup') ? document.getElementById('setup').querySelector('form') : null;
+/* =============================================
+   FEATURE 4: INDEX.HTML — FORM VALIDATION
 
 if (indexForm) {
   // Get the name input field
